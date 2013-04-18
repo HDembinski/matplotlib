@@ -824,7 +824,7 @@ class ColorbarBase(cm.ScalarMappable):
     def set_visible(self, isVisibile):
         for child in self.ax.get_children():
             if hasattr(child,"set_visible"):
-                child.set_visibile(isVisibile)
+                child.set_visible(isVisibile)
 
 
 class Colorbar(ColorbarBase):
